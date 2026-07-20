@@ -4,7 +4,8 @@ metadata:
   name: kustomize-inline-example
 namespace: test1
 resources:
-  - ../guestbook/
+  - guestbook-ui-deployment.yaml
+  - guestbook-ui-svc.yaml
 patches:
   - target:
       kind: Deployment
